@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Bán Hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .header a {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 10px 20px;
+            background-color: #e91e63;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .header a:hover {
+            background-color: #d81b60;
+        }
+        .search-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+        }
+        .search-container button {
+            padding: 10px;
+            background-color: #e91e63;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+        .search-container button:hover {
+            background-color: #d81b60;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 250px;
+            margin: 15px;
+            padding: 10px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product h2 {
+            font-size: 18px;
+            color: #333;
+        }
+        .product p {
+            color: #888;
+        }
+        .product .price {
+            font-size: 20px;
+            color: #e91e63;
+            margin: 10px 0;
+        }
+        .product button {
+            padding: 10px;
+            background-color: #e91e63;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .product button:hover {
+            background-color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Cửa Hàng Mặt Nạ Trực Tuyến</h1>
+        <p>Mua sắm dễ dàng và nhanh chóng</p>
+        <a href="trang chủ.html" class="buy-now">Trang chủ</a>
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm mặt hàng...">
+        <button>Tìm kiếm</button>
+    </div>
+    <div class="container">
+        <!-- Sản phẩm 1 -->
+        <div class="product">
+            <img src="https://png.pngtree.com/png-clipart/20210309/original/pngtree-japanese-custom-simple-fox-mask-png-image_5816910.jpg" alt="Sản phẩm 1">
+            <h2>Mặt Nạ Cáo Phong Cách Nhật Bản</h2>
+            <p>Đậm chất phong cách Nhật Bản</p>
+            <div class="price">300,000 VND</div>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <!-- Sản phẩm 2 -->
+        <div class="product">
+            <img src="https://down-vn.img.susercontent.com/file/136d70280f6b624923662499feab67e0" alt="Sản phẩm 2">
+            <h2>Mặt nạ quỷ</h2>
+            <p>Đẹp, dùng trang trí setup phòng làm việc</p>
+            <div class="price">500,000 VND</div>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <!-- Sản phẩm 3 -->
+        <div class="product">
+            <img src="https://down-vn.img.susercontent.com/file/78522308e1b9bb9891ca1340f800b06e" alt="Sản phẩm 3">
+            <h2>Mặt nạ tôn ngộ không</h2>
+            <p>Mặt nạ tuổi thơ</p>
+            <div class="price">450,000 VND</div>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <!-- Sản phẩm 4 -->
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OIP.2NwuGoPowCYCX3_-el__nQHaHX?rs=1&pid=ImgDetMain" alt="Sản phẩm 4">
+            <h2>Mặt nạ đầu cá</h2>
+            <p>Hay, dùng để trêu trọc bạn bè.</p>
+            <div class="price">600,000 VND</div>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <!-- Sản phẩm 5 -->
+        <div class="product">
+            <img src="https://th.bing.com/th/id/R.5209ee16119de8834fae240901787b31?rik=miwUsyo%2fGL%2fE6Q&pid=ImgRaw&r=0" alt="Sản phẩm 5">
+            <h2>Mặt nạ hacker</h2>
+            <p>Đẹp, ngầu lòi, có chiếc mặt nạ là vua của cả xóm.</p>
+            <div class="price">750,000 VND</div>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+        <!-- Sản phẩm 6 -->
+        <div class="product">
+            <img src="https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lyurtaj4bvdu8b" alt="Sản phẩm 6">
+            <h2>Mặt nạ Cristiano Ronaldo</h2>
+            <p>Mặt nạ phó GOAT.</p>
+            <div class="price">900,000 VND</div>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <div class="buy-now">
+        <a href="#">Mua Hàng</a>
+    </div>
+</body>
+</html>
